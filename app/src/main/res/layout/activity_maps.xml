@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/editText"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:hint="Search Location"
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="searchLocation"
+            android:text="Search"
+            android:background="#FFFFFF"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
