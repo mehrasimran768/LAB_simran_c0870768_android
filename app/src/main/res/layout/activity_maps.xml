@@ -19,7 +19,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:layout_width="250dp"
+            android:layout_width="300dp"
             android:layout_height="50dp"
             android:id="@+id/editText"
             android:padding="10dp"
@@ -35,5 +35,11 @@
             android:background="#FFFFFF"/>
 
     </LinearLayout>
-
+    <Button
+        android:id="@+id/map_type_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Map Type"
+        android:background="#FFFFFF"
+        android:layout_marginTop="700dp"/>
 </RelativeLayout>
